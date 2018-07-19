@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue_light"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/tv_main_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_bottom_navigation_home_item"
+            android:textColor="@color/white" />
+
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <com.mixotc.abbs.CustomViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.mixotc.abbs.CustomViewPager>
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/bottom_navigation_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bnbBackgroundColor="?android:attr/windowBackground"
+        app:bnbActiveColor="@color/blue_light"
+        app:bnbInactiveColor="@color/black">
+    </com.ashokvarma.bottomnavigation.BottomNavigationBar>
+</LinearLayout>

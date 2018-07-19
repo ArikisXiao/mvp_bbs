@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_real_name">论坛Demo</string>
+    <string name="todo">TODO</string>
+    <!-- LoginActivity的文字和相关提示-->
+    <string name="login_username_tips">账&#160;号&#160;&#160;:</string>
+    <string name="login_username_hint">请输入手机号/邮箱/用户名</string>
+    <string name="login_username_error">用户名错误或不存在！请重新输入！</string>
+    <string name="login_password_tips">密&#160;码&#160;&#160;:</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_password_error">密码错误！请重新输入！</string>
+    <string name="login_submit_btn">登陆</string>
+    <string name="login_forgot_pwd_btn">忘记密码？</string>
+    <string name="login_register_btn">注册</string>
+    <string name="login_verification_code_login_btn">验证码登陆</string>
+    <!--MainActivity的底部导航栏的文字-->
+    <string name="main_bottom_navigation_home_item">主&#160;页</string>
+    <string name="main_bottom_navigation_dynamic_item">动&#160;态</string>
+    <string name="main_bottom_navigation_message_item">消&#160;息</string>
+    <string name="main_bottom_navigation_user_center_item">我&#160;的</string>
+
+    <!--HomeFragment顶部导航栏的文字-->
+    <string name="home_navigation_bbs_btn">论坛</string>
+    <string name="home_navigation_news_btn">新闻</string>
+    <string name="home_navigation_qa_btn">问答</string>
+    <string name="home_navigation_checkin_btn">签到</string>
+    <string name="home_navigation_activity_btn">活动</string>
+    <string name="home_navigation_vstore_btn">微店</string>
+    <string name="home_navigation_picked_btn">精选</string>
+    <string name="home_navigation_group_btn">群组</string>
+    <!--HomeFragment热门资讯，热门帖子，最新问答栏目相关控件文字-->
+    <string name="home_top_news_tips">热门资讯</string>
+    <string name="home_top_post_tips">热门帖子</string>
+    <string name="home_latest_qa_tips">最新问答</string>
+    <string name="home_more_btn">更多</string>
+
+    <string name="home_item_reading_tips">阅读量:</string>
+    <string name="home_item_comment_tips">评论:</string>
+    <string name="publish_dynamic_toolbar">发表文字</string>
+    <string name="publish_dynamic_toolbar_submit_btn">发表</string>
+    <string name="publish_dynamic_info_hint">这一刻的想法...</string>
+    <string name="publish_dynamic_location">所在位置</string>
+    <string name="publish_dynamic_sel">提醒谁看</string>
+    <string name="login_password_hint_checked">请再次输入密码</string>
+    <string name="register_submit_btn">注册</string>
+
+</resources>

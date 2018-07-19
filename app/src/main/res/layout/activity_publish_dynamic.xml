@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".dynamic.publish.PublishDynamicActivity"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        style="@style/Theme.AppCompat.Light">
+
+        <LinearLayout
+            android:id="@+id/ll_publish_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/sel_ui_click">
+
+            <ImageView
+                android:id="@+id/iv_publish_toolbar_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_back"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/todo" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/ll_publish_top_back"
+            android:text="@string/publish_dynamic_toolbar"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/ll_publish_top_back" />
+
+        <TextView
+            android:id="@+id/tv_publish_top_summit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/sel_ui_click"
+            android:text="@string/publish_dynamic_toolbar_submit_btn"
+            android:textColor="#FF888888"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <EditText
+            android:id="@+id/et_publish_info"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="@string/publish_dynamic_info_hint"
+            android:inputType="textMultiLine"
+            android:maxLength="140"
+            android:background="@null"
+            android:textSize="16dp"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@null"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/tv_publish_edit_text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_publish_info"
+            android:layout_alignEnd="@+id/et_publish_info"
+            android:layout_alignRight="@+id/et_publish_info"
+            android:layout_marginBottom="15dp"
+            android:text="还可以输入140字"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+        <View
+            android:id="@+id/view_line_first"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/et_publish_info"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/ll_publish_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sel_ui_click"
+            android:layout_below="@+id/view_line_first"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_publish_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="@string/publish_dynamic_location"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view_line_second"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ll_publish_location"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/ll_publish_sel_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line_second"
+            android:background="@drawable/sel_ui_click"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_aite" />
+
+            <TextView
+                android:id="@+id/tv_publish_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="@string/publish_dynamic_sel"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/ll_publish_sel_friends"
+            android:background="?android:attr/listDivider" />
+    </RelativeLayout>
+</LinearLayout>

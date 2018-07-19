@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:columnCount="4"
+                app:rowCount="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_home_bbs"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/sel_ui_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_home_bbs"
+                        android:contentDescription="@string/todo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_navigation_bbs_btn"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_news"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/sel_ui_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_home_news"
+                        android:contentDescription="@string/todo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_navigation_news_btn"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_questions"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/sel_ui_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_home_qa"
+                        android:contentDescription="@string/todo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_navigation_qa_btn"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_home_checkin"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/sel_ui_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_home_checkin"
+                        android:contentDescription="@string/todo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_navigation_checkin_btn"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?android:attr/listDivider"/>
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:columnCount="4"
+                app:rowCount="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_home_activity"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/sel_ui_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_home_activity"
+                        android:contentDescription="@string/todo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_navigation_activity_btn"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_vstore"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/sel_ui_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_home_vstore"
+                        android:contentDescription="@string/todo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_navigation_vstore_btn"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_search_user"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/sel_ui_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_home_picked"
+                        android:contentDescription="@string/todo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_navigation_picked_btn"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_group"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/sel_ui_click"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_home_group"
+                        android:contentDescription="@string/todo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_navigation_group_btn"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?android:attr/listDivider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/home_top_news_tips"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_home_top_news_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sel_ui_click"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/home_more_btn"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="clip_vertical"
+                            android:background="@drawable/ic_goto"
+                            android:contentDescription="@string/todo"
+                            android:scaleType="centerCrop"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_home_top_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/home_top_post_tips"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_home_top_post_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sel_ui_click"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/home_more_btn"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="clip_vertical"
+                            android:background="@drawable/ic_goto"
+                            android:contentDescription="@string/todo"
+                            android:scaleType="centerCrop"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+
+                <ListView
+                    android:id="@+id/lv_home_top_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/home_latest_qa_tips"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_home_latest_qa_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sel_ui_click"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/home_more_btn"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="clip_vertical"
+                            android:background="@drawable/ic_goto"
+                            android:contentDescription="@string/todo"
+                            android:scaleType="centerCrop"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+
+                <ListView
+                    android:id="@+id/lv_home_latest_qa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

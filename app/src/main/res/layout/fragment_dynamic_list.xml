@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/refresh_dynamic_list"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.scwang.smartrefresh.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.scwang.smartrefresh.header.MaterialHeader>
+    <ListView
+        android:id="@+id/lv_dynamic_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.scwang.smartrefresh.layout.footer.BallPulseFooter>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
